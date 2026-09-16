@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinemo — 4D Cinema Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">
+            <span class="logo-icon">И</span>
+            <span class="logo-text">Kinemo</span>
+        </a>
+        <nav class="nav-menu">
+            <a href="#platform" class="nav-link" data-i18n="nav_platform">Platform</a>
+            <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
+            <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <!-- LANGUAGE SWITCHER -->
+            <div class="lang-switch">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <span class="lang-divider">/</span>
+                <button id="lang-es" class="lang-btn">ES</button>
+            </div>
+            <a href="#" class="btn-text" data-i18n="btn_signin">Sign in</a>
+            <a href="#contact" class="btn-primary" data-i18n="btn_request_demo">Request Demo</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span data-i18n="hero_badge">4D CINEMA TECHNOLOGY</span>
+            </div>
+            <h1 class="hero-title" data-i18n="hero_title">
+                Bring the 4D experience to your cinema screens <span class="highlight">without high costs</span>
+            </h1>
+            <p class="hero-description" data-i18n="hero_desc">
+                Centralize motion seat control, synchronized environmental effects, and real-time analytics without replacing your existing infrastructure.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary btn-large" data-i18n="btn_start_now">Get Started</a>
+                <a href="#platform" class="btn-secondary btn-large" data-i18n="btn_learn_more">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-label" data-i18n="stat_screens">Connected screens</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">99.4%</span>
+                    <span class="stat-label" data-i18n="stat_uptime">Guaranteed uptime</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">&lt; 10ms</span>
+                    <span class="stat-label" data-i18n="stat_latency">Sync latency</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DASHBOARD MOCKUP -->
+        <div class="hero-preview">
+            <div class="dashboard-card">
+                <div class="dashboard-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="dashboard-title">Kinemo · Central Telemetry</span>
+                    <span class="dashboard-status-dot"></span>
+                </div>
+                <div class="dashboard-body">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="m-label" data-i18n="dash_active_rooms">Active screens</span>
+                            <span class="m-val">14</span>
+                            <span class="m-sub positive">+2</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="m-label" data-i18n="dash_sync">Effects sync</span>
+                            <span class="m-val">99.1%</span>
+                            <span class="m-sub positive">▲</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="m-label" data-i18n="dash_alerts">Alerts today</span>
+                            <span class="m-val">1</span>
+                            <span class="m-sub negative">▼</span>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <span class="chart-title" data-i18n="dash_perf">PERFORMANCE - 12H</span>
+                        <div class="chart-graphic">
+                            <svg viewBox="0 0 400 100" class="chart-svg">
+                                <path d="M0,80 Q50,60 100,70 T200,50 T300,60 T400,40 L400,100 L0,100 Z" fill="url(#grad)" opacity="0.4"/>
+                                <path d="M0,80 Q50,60 100,70 T200,50 T300,60 T400,40" fill="none" stroke="#8B5CF6" stroke-width="3"/>
+                                <defs>
+                                    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8"/>
+                                        <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="events-list">
+                        <span class="events-title" data-i18n="dash_events">RECENT EVENTS</span>
+                        <div class="event-item">
+                            <span class="e-room"><span class="dot green"></span> Screen 3</span>
+                            <span class="e-msg" data-i18n="dash_evt1">Sync completed</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="e-room"><span class="dot yellow"></span> Screen 7</span>
+                            <span class="e-msg" data-i18n="dash_evt2">Motor #4 — warning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORM SECTION -->
+<section id="platform" class="section platform-section">
+    <div class="container">
+        <span class="section-tag" data-i18n="plat_tag">PLATFORM</span>
+        <h2 class="section-title" data-i18n="plat_title">Everything you need to manage your immersive theater</h2>
+
+        <div class="platform-grid">
+            <div class="accordion-list">
+                <div class="accordion-item active" data-tab="tab-1">
+                    <div class="acc-header">
+                        <div class="acc-title-group">
+                            <span class="acc-icon">❖</span>
+                            <h3 data-i18n="plat_f1_title">Effects Synchronization</h3>
+                        </div>
+                        <span class="acc-arrow">▲</span>
+                    </div>
+                    <div class="acc-content" data-i18n="plat_f1_desc">
+                        Proprietary sub-10ms protocol coordinating motion seats, wind, scent, and vibration frame-by-frame with screen content.
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-tab="tab-2">
+                    <div class="acc-header">
+                        <div class="acc-title-group">
+                            <span class="acc-icon">🖥</span>
+                            <h3 data-i18n="plat_f2_title">Simplified Management Software</h3>
+                        </div>
+                        <span class="acc-arrow">▼</span>
+                    </div>
+                    <div class="acc-content" data-i18n="plat_f2_desc">
+                        Unified and intuitive dashboard to operate all theater rooms across your entire complex from a single screen.
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-tab="tab-3">
+                    <div class="acc-header">
+                        <div class="acc-title-group">
+                            <span class="acc-icon">⚠</span>
+                            <h3 data-i18n="plat_f3_title">Maintenance Incident Control</h3>
+                        </div>
+                        <span class="acc-arrow">▼</span>
+                    </div>
+                    <div class="acc-content" data-i18n="plat_f3_desc">
+                        Proactive detection of mechanical and hydraulic issues before they interrupt a movie session.
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-tab="tab-4">
+                    <div class="acc-header">
+                        <div class="acc-title-group">
+                            <span class="acc-icon">📊</span>
+                            <h3 data-i18n="plat_f4_title">Performance Analytics</h3>
+                        </div>
+                        <span class="acc-arrow">▼</span>
+                    </div>
+                    <div class="acc-content" data-i18n="plat_f4_desc">
+                        Detailed occupancy stats, power consumption insights, and real-time ROI tracking per auditorium.
+                    </div>
+                </div>
+            </div>
+
+            <div class="platform-visual">
+                <div class="v-card">
+                    <span class="v-title" data-i18n="plat_vis_title1">LIVE SYNCHRONIZATION</span>
+                    <div class="rooms-grid">
+                        <div class="room-box"><span class="dot green"></span><strong>Screen 1</strong><span>OK</span></div>
+                        <div class="room-box"><span class="dot yellow"></span><strong>Screen 2</strong><span>Alert</span></div>
+                        <div class="room-box"><span class="dot green"></span><strong>Screen 3</strong><span>OK</span></div>
+                        <div class="room-box"><span class="dot green"></span><strong>Screen 4</strong><span>OK</span></div>
+                    </div>
+                    <div class="bars-graphic">
+                        <div class="bar" style="height: 40%;"></div>
+                        <div class="bar" style="height: 70%;"></div>
+                        <div class="bar" style="height: 50%;"></div>
+                        <div class="bar" style="height: 90%;"></div>
+                        <div class="bar" style="height: 60%;"></div>
+                        <div class="bar" style="height: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="v-card">
+                    <span class="v-title" data-i18n="plat_vis_title2">RECENT INCIDENTS</span>
+                    <div class="incidents-list">
+                        <div class="inc-item">
+                            <span>#1042 Seat motor 14B — noise</span>
+                            <span class="tag tag-green">Resolved</span>
+                        </div>
+                        <div class="inc-item">
+                            <span>#1041 Wind system screen 7</span>
+                            <span class="tag tag-yellow">In progress</span>
+                        </div>
+                        <div class="inc-item">
+                            <span>#1039 Scent channel 2 — low pressure</span>
+                            <span class="tag tag-gray">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="section about-section">
+    <div class="container text-center">
+        <span class="section-tag" data-i18n="about_tag">ABOUT US</span>
+        <h2 class="section-title" data-i18n="about_title">Meet the Team</h2>
+        <p class="about-subtitle" data-i18n="about_subtitle">
+            The creators behind Kinemo, building next-generation technology for modern cinema spaces.
+        </p>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="avatar-circle"></div>
+                <h3 class="member-name">Huamanchumo Chicchon, Felipe Marcelo</h3>
+                <span class="member-code">u20241b932</span>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar-circle"></div>
+                <h3 class="member-name">Correa Rodriguez, Andrea Khristina</h3>
+                <span class="member-code">u20231c234</span>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar-circle"></div>
+                <h3 class="member-name">Trigoso Garrido, Cristian Joseph</h3>
+                <span class="member-code">u20231a456</span>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar-circle"></div>
+                <h3 class="member-name">Flores Chavez, Fabricio</h3>
+                <span class="member-code">u20231d789</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING SECTION (Original Graphic Cards without bottom buttons) -->
+<section id="pricing" class="section pricing-section">
+    <div class="container text-center">
+        <span class="section-tag" data-i18n="pricing_tag">PRICING</span>
+        <h2 class="section-title" data-i18n="pricing_title">Simple, transparent pricing</h2>
+
+        <div class="pricing-banner" data-i18n="pricing_banner">
+            ★ All plans include hardware leasing options with up to 20% savings
+        </div>
+
+        <div class="pricing-grid">
+            <!-- STARTER CARD -->
+            <div class="pricing-card">
+                <div class="card-plan-header">
+                    <span class="plan-name">STARTER</span>
+                    <div class="plan-price">$490<span class="per-month">/mo</span></div>
+                    <p class="plan-desc" data-i18n="p_starter_desc">For 1-3 screen circuits stepping into 4D experiences.</p>
+                </div>
+                <ul class="features-list">
+                    <li data-i18n="p_s_f1">✓ Up to 3 connected screens</li>
+                    <li data-i18n="p_s_f2">✓ Basic synchronization</li>
+                    <li data-i18n="p_s_f3">✓ Unified control dashboard</li>
+                    <li data-i18n="p_s_f4">✓ Email support (48h)</li>
+                    <li data-i18n="p_s_f5">✓ Monthly analytics reports</li>
+                </ul>
+            </div>
+
+            <!-- GROWTH CARD (FEATURED) -->
+            <div class="pricing-card featured">
+                <div class="featured-badge" data-i18n="p_badge_popular">MOST POPULAR</div>
+                <div class="card-plan-header">
+                    <span class="plan-name">GROWTH</span>
+                    <div class="plan-price">$1,190<span class="per-month">/mo</span></div>
+                    <p class="plan-desc" data-i18n="p_growth_desc">For expanding cinema operators needing advanced features.</p>
+                </div>
+                <ul class="features-list">
+                    <li data-i18n="p_g_f1">✓ Up to 12 connected screens</li>
+                    <li data-i18n="p_g_f2">✓ Advanced frame-sync</li>
+                    <li data-i18n="p_g_f3">✓ Incident management & telemetry</li>
+                    <li data-i18n="p_g_f4">✓ Priority support (4h)</li>
+                    <li data-i18n="p_g_f5">✓ Real-time analytics</li>
+                    <li data-i18n="p_g_f6">✓ Full Integration API</li>
+                </ul>
+            </div>
+
+            <!-- ENTERPRISE CARD -->
+            <div class="pricing-card">
+                <div class="card-plan-header">
+                    <span class="plan-name">ENTERPRISE</span>
+                    <div class="plan-price">Custom</div>
+                    <p class="plan-desc" data-i18n="p_ent_desc">For large cinema chains with multiple national locations.</p>
+                </div>
+                <ul class="features-list">
+                    <li data-i18n="p_e_f1">✓ Unlimited connected screens</li>
+                    <li data-i18n="p_e_f2">✓ 99.9% guaranteed SLA</li>
+                    <li data-i18n="p_e_f3">✓ Integration with custom systems</li>
+                    <li data-i18n="p_e_f4">✓ Dedicated CSM</li>
+                    <li data-i18n="p_e_f5">✓ On-site onboarding</li>
+                    <li data-i18n="p_e_f6">✓ Flexible contracts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+        <div class="contact-info">
+            <span class="section-tag" data-i18n="contact_tag">CONTACT</span>
+            <h2 class="section-title" data-i18n="contact_title">Ready to transform your cinema experience?</h2>
+            <p class="contact-desc" data-i18n="contact_desc">
+                Fill out your details and a Kinemo technical specialist will reach out within one business day to schedule a personalized demo.
+            </p>
+
+            <!-- WHAT HAPPENS NEXT GRAPHIC BOX -->
+            <div class="steps-box">
+                <span class="steps-title" data-i18n="steps_header">WHAT HAPPENS NEXT</span>
+                <div class="step-item">
+                    <div class="step-num">01</div>
+                    <div class="step-text">
+                        <strong data-i18n="step1_title">Discovery Call</strong>
+                        <p data-i18n="step1_desc">30-min intro with a technical specialist</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">02</div>
+                    <div class="step-text">
+                        <strong data-i18n="step2_title">Personalized Demo</strong>
+                        <p data-i18n="step2_desc">Tailored to your screen count and hardware setup</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">03</div>
+                    <div class="step-text">
+                        <strong data-i18n="step3_title">Proposal in 48h</strong>
+                        <p data-i18n="step3_desc">Clear pricing, activation plan, and support breakdown</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">04</div>
+                    <div class="step-text">
+                        <strong data-i18n="step4_title">Go-live in &lt; 72h</strong>
+                        <p data-i18n="step4_desc">Your first room active and operating with Kinemo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM CARD -->
+        <div class="form-card">
+            <form id="demo-form">
+                <div class="form-group">
+                    <label for="name" data-i18n="lbl_fullname">Full name</label>
+                    <input type="text" id="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="company" data-i18n="lbl_company">Cinema chain / Company name</label>
+                    <input type="text" id="company" required />
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="lbl_email">Work email</label>
+                    <input type="email" id="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-i18n="lbl_phone">Phone number</label>
+                    <input type="tel" id="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="screens" data-i18n="lbl_screens">Number of screens</label>
+                    <input type="number" id="screens" min="1" required />
+                </div>
+
+                <button type="submit" class="btn-primary full-width btn-large" data-i18n="btn_request_demo">Request Demo</button>
+
+                <div class="form-footer-links">
+                    <p class="form-disclaimer"><span data-i18n="form_disclaimer">By submitting, you accept our</span> <a href="#" data-i18n="privacy_link">privacy policy</a>.</p>
+                    <a href="#" class="affiliate-link" data-i18n="affiliate_link">Are you an affiliate? Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <a href="#" class="logo">
+                <span class="logo-icon">И</span>
+                <span class="logo-text">Kinemo</span>
+            </a>
+            <span class="copyright">© 2026 Kinemo · All rights reserved</span>
+        </div>
+        <div class="footer-links">
+            <a href="#" data-i18n="ft_privacy">Privacy</a>
+            <a href="#" data-i18n="ft_terms">Terms</a>
+            <a href="#contact" data-i18n="ft_contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

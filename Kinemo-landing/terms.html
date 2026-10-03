@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Kinemo</title>
+    <!-- Asegúrate de que la ruta de tu CSS sea correcta (ej. css/style.css o css/styles.css) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header / Navbar idéntico al index.html -->
+<header class="navbar">
+    <div class="container nav-container">
+        <!-- Logo a la izquierda -->
+        <a href="index.html" class="logo">
+            <span class="logo-icon">И</span>
+            <span class="logo-text">Kinemo</span>
+        </a>
+
+        <!-- Contenedor derecho que agrupa el menú y el selector de idioma juntos -->
+        <div class="nav-right-group">
+            <nav class="nav-menu">
+                <a href="index.html#platform" class="nav-link" data-i18n="nav_platform">Platform</a>
+                <a href="index.html#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                <a href="index.html#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+                <a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- LANGUAGE SWITCHER -->
+                <div class="lang-switch">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <span class="lang-divider">/</span>
+                    <button id="lang-es" class="lang-btn">ES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Contenido Principal Estilo Legal (En Inglés por defecto) -->
+<main class="section" style="padding: 60px 0;">
+    <div class="container" style="max-width: 800px;">
+
+        <!-- Cabecera -->
+        <div class="legal-header" style="margin-bottom: 40px;">
+            <span class="section-tag" style="color: var(--purple-light); font-weight: 700; font-size: 0.8rem; letter-spacing: 1px;" data-i18n="terms_tag">LEGAL</span>
+            <h1 class="section-title" style="font-size: 2.5rem; margin-top: 8px; color: var(--text-white);" data-i18n="terms_title">Terms and Conditions of Use</h1>
+            <p class="hero-description" style="margin-top: 6px; color: var(--text-muted); font-size: 0.9rem;" data-i18n="terms_update">Last updated: October 3, 2026</p>
+        </div>
+
+        <!-- Índice rápido numerado -->
+        <div class="legal-toc" style="background: var(--bg-card-alt); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 24px 32px; margin-bottom: 48px;">
+            <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: var(--purple-light); font-weight: 600;">
+                <li><a href="#sec1" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_1">Introduction and Acceptance of Agreement</a></li>
+                <li><a href="#sec2" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_2">The Kinemo Service We Provide</a></li>
+                <li><a href="#sec3" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_3">Use of the Service and User Accounts</a></li>
+                <li><a href="#sec4" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_4">Intellectual Property and Content Rights</a></li>
+                <li><a href="#sec5" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_5">Customer Support, Information, and Questions</a></li>
+                <li><a href="#sec6" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_6">Problems and Disputes</a></li>
+                <li><a href="#sec7" style="color: inherit; text-decoration: none;" data-i18n="terms_toc_7">About These Terms</a></li>
+            </ol>
+        </div>
+
+        <!-- Cuerpo del texto legal -->
+        <div class="legal-body" style="display: flex; flex-direction: column; gap: 40px; color: var(--text-muted); font-size: 1rem; line-height: 1.7;">
+
+            <section id="sec1">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h1">1. Introduction</h2>
+                <p data-i18n="terms_p1_1">Welcome to <strong>Kinemo</strong>. Please read these Terms of Use carefully as they govern your use of (including access to) Kinemo's personalized services for immersive experiences, screen control, and hardware management, including all websites and software applications that incorporate or link to these Terms (collectively, the "<strong>Kinemo Service</strong>").</p>
+                <p style="margin-top: 12px;" data-i18n="terms_p1_2">Your use of the Kinemo Service is subject to additional terms and conditions provided by us, which are incorporated into these Terms by this reference. If you register for or use the Kinemo Service, you accept these Terms. If you do not agree to these Terms, you must not use the Service or access any content.</p>
+            </section>
+
+            <section id="sec2">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h2">2. The Kinemo Service We Provide</h2>
+                <p data-i18n="terms_p2">We offer a variety of frame-sync tools and unified control plans for cinema operators and entertainment venues. We strive to maintain continuous platform availability, though access may occasionally be interrupted for technical maintenance or system upgrades.</p>
+            </section>
+
+            <section id="sec3">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h3">3. Use of the Service and User Accounts</h2>
+                <p data-i18n="terms_p3">To use certain features, you must create a user account. You are solely responsible for maintaining the security of your login credentials.</p>
+                <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 6px;">
+                    <li data-i18n="terms_li3_1">You must not share your account or allow unauthorized access.</li>
+                    <li data-i18n="terms_li3_2">Reverse engineering or bypassing platform security protocols is strictly prohibited.</li>
+                </ul>
+            </section>
+
+            <section id="sec4">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h4">4. Intellectual Property and Content Rights</h2>
+                <p data-i18n="terms_p4">All design, interfaces, logos, trademarks, and source code of Kinemo are the exclusive property of their creators and are protected by applicable intellectual property laws.</p>
+            </section>
+
+            <section id="sec5">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h5">5. Customer Support, Information, and Questions</h2>
+                <p data-i18n="terms_p5">For any inquiries, technical support, or complaints regarding your account or subscribed plans, you can contact our support team through the official communication channels provided on the platform.</p>
+            </section>
+
+            <section id="sec6">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h6">6. Problems and Disputes</h2>
+                <p data-i18n="terms_p6">Any dispute or claim arising from the use of our services will be resolved in good faith between the involved parties, always aiming for a direct and transparent solution.</p>
+            </section>
+
+            <section id="sec7">
+                <h2 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: 16px;" data-i18n="terms_h7">7. About These Terms</h2>
+                <p data-i18n="terms_p7">We may modify these Terms periodically for commercial or legal reasons. We will notify you of any relevant changes by updating the date at the top of this document.</p>
+            </section>
+
+        </div>
+
+    </div>
+</main>
+
+<!-- Footer sencillo -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <div class="logo">
+                <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.8rem;">И</div>
+                <span style="font-size: 0.9rem;">Kinemo</span>
+            </div>
+            <span class="copyright">© 2026 Kinemo · All rights reserved</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Vinculamos tu script JS principal para que funcione el cambio de idioma EN/ES -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

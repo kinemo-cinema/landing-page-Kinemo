@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,25 +13,29 @@
 
 <header class="navbar">
     <div class="container nav-container">
+        <!-- Logo a la izquierda -->
         <a href="#" class="logo">
             <span class="logo-icon">И</span>
             <span class="logo-text">Kinemo</span>
         </a>
-        <nav class="nav-menu">
-            <a href="#platform" class="nav-link" data-i18n="nav_platform">Platform</a>
-            <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
-            <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
-            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
-        </nav>
-        <div class="nav-actions">
-            <!-- LANGUAGE SWITCHER -->
-            <div class="lang-switch">
-                <button id="lang-en" class="lang-btn active">EN</button>
-                <span class="lang-divider">/</span>
-                <button id="lang-es" class="lang-btn">ES</button>
+
+        <!-- Contenedor derecho que agrupa el menú y el selector de idioma juntos -->
+        <div class="nav-right-group">
+            <nav class="nav-menu">
+                <a href="#platform" class="nav-link" data-i18n="nav_platform">Platform</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- LANGUAGE SWITCHER -->
+                <div class="lang-switch">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <span class="lang-divider">/</span>
+                    <button id="lang-es" class="lang-btn">ES</button>
+                </div>
             </div>
-            <a href="#" class="btn-text" data-i18n="btn_signin">Sign in</a>
-            <a href="#contact" class="btn-primary" data-i18n="btn_subscribe">Subscribe</a>
         </div>
     </div>
 </header>
@@ -59,9 +63,6 @@
     </div>
 </section>
 
-</body>
-</html>
-
 <!-- PLATFORM SECTION -->
 <section id="platform" class="section platform-section">
     <div class="container">
@@ -69,7 +70,7 @@
         <h2 class="section-title" data-i18n="plat_title">Everything you need to manage your immersive theater</h2>
 
         <div class="platform-grid">
-            <!-- COLUMNA IZQUIERDA: Características fijas (sin acordeón) -->
+            <!-- COLUMNA IZQUIERDA: Características fijas -->
             <div class="features-list-fixed">
                 <div class="platform-feature-card">
                     <div class="feat-header">
@@ -112,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- COLUMNA DERECHA: Los gráficos visuales que querías de vuelta -->
+            <!-- COLUMNA DERECHA: Gráficos visuales -->
             <div class="platform-visual">
                 <div class="v-card">
                     <span class="v-title" data-i18n="plat_vis_title1">LIVE SYNCHRONIZATION</span>
@@ -156,52 +157,64 @@
 
 <!-- ABOUT US SECTION -->
 <section id="about" class="section about-section">
-    <div class="container text-center">
-        <span class="section-tag" data-i18n="about_tag">NOSOTROS</span>
-        <h2 class="section-title" data-i18n="about_title">Conoce al Equipo</h2>
-        <p class="about-subtitle" data-i18n="about_subtitle">
-            Nuestro trabajo es dedicado al entretenimiento inmersivo, cuyo objetivo es ofrecer experiencias audiovisuales más dinámicas e interactivas que las tradicionales, transformando al espectador en un participante activo dentro de cada historia.
-        </p>
+    <div class="container">
+        <!-- Cabecera principal -->
+        <div class="section-header text-center">
+            <span class="section-tag" data-i18n="about_tag">ABOUT US</span>
+            <h2 class="section-title" data-i18n="about_title">Meet the Team</h2>
+            <p class="about-subtitle" data-i18n="about_subtitle">
+                The creators behind Kinemo, building next-generation technology for modern cinema spaces.
+            </p>
+        </div>
 
-        <!-- GRID DEL EQUIPO (Con avatares más pequeños y fotos reales) -->
-        <div class="team-grid">
-            <div class="team-card">
-                <img src="assets/Felipe.png" alt="Felipe Marcelo" class="team-avatar">
-                <h3 class="member-name">Huamanchumo Chicchon, Felipe Marcelo</h3>
-                <span class="member-code">u20241b932</span>
-            </div>
+        <!-- PARTE SUPERIOR: EQUIPO -->
+        <div class="team-section-wrapper">
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="assets/Felipe.png" alt="Felipe Marcelo" class="team-avatar">
+                    <h3 class="member-name">Huamanchumo Chicchon, Felipe Marcelo</h3>
+                    <span class="member-code">u20241b932</span>
+                </div>
 
-            <div class="team-card">
-                <img src="assets/Andrea.png" alt="Andrea Khristina" class="team-avatar">
-                <h3 class="member-name">Correa Rodriguez, Andrea Khristina</h3>
-                <span class="member-code">u20231c234</span>
-            </div>
+                <div class="team-card">
+                    <img src="assets/Andrea.png" alt="Andrea Khristina" class="team-avatar">
+                    <h3 class="member-name">Correa Rodriguez, Andrea Khristina</h3>
+                    <span class="member-code">u20231c234</span>
+                </div>
 
-            <div class="team-card">
-                <img src="assets/cristian.png" alt="Cristian Joseph" class="team-avatar">
-                <h3 class="member-name">Trigoso Garrido, Cristian Joseph</h3>
-                <span class="member-code">u20231a456</span>
-            </div>
+                <div class="team-card">
+                    <img src="assets/cristian.png" alt="Cristian Joseph" class="team-avatar">
+                    <h3 class="member-name">Trigoso Garrido, Cristian Joseph</h3>
+                    <span class="member-code">u20231a456</span>
+                </div>
 
-            <div class="team-card">
-                <img src="assets/Fabricio.png" alt="Fabricio" class="team-avatar">
-                <h3 class="member-name">Flores Chavez, Fabricio</h3>
-                <span class="member-code">u20231d789</span>
+                <div class="team-card">
+                    <img src="assets/Fabricio.png" alt="Fabricio" class="team-avatar">
+                    <h3 class="member-name">Flores Chavez, Fabricio</h3>
+                    <span class="member-code">u20231d789</span>
+                </div>
             </div>
         </div>
 
-        <!-- SECCIÓN DE VIDEO DEMOSTRATIVO (Placeholder de video) -->
-        <div class="video-placeholder-container">
-            <div class="video-box">
-                <div class="play-icon-circle">▶</div>
-                <h4 class="video-box-title">Video Próximamente</h4>
-                <p class="video-box-desc">Conoce a nuestro equipo próximamente.</p>
+        <!-- PARTE INFERIOR: VIDEO -->
+        <div class="videos-section-wrapper">
+            <div class="videos-single-grid">
+                <div class="video-responsive-container">
+                    <iframe
+                            src="https://www.youtube.com/embed/qOCPpOtdIK0"
+                            title="Product Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
+
     </div>
 </section>
 
-<!-- PRICING SECTION (Original Graphic Cards without bottom buttons) -->
+<!-- PRICING SECTION -->
 <section id="pricing" class="section pricing-section">
     <div class="container text-center">
         <span class="section-tag" data-i18n="pricing_tag">PRICING</span>
@@ -228,9 +241,9 @@
                 </ul>
             </div>
 
-            <!-- GROWTH CARD (FEATURED) -->
+            <!-- GROWTH CARD -->
             <div class="pricing-card featured">
-                <div class="featured-badge" data-i18n="p_badge_popular">MOST POPULAR</div>
+                <div class="plan-badge" data-i18n="p_badge_popular">MOST POPULAR</div>
                 <div class="card-plan-header">
                     <span class="plan-name">GROWTH</span>
                     <div class="plan-price">$1,190<span class="per-month">/mo</span></div>
@@ -266,27 +279,41 @@
     </div>
 </section>
 
-<!-- CONTACT / GET STARTED SECTION -->
+<!-- CONTACT SECTION -->
 <section id="contact" class="section get-started-section">
-    <div class="container text-center">
-        <span class="section-tag" data-i18n="contact_tag">GET STARTED</span>
-        <h2 class="section-title" data-i18n="contact_title">Ready to transform your cinema experience?</h2>
-        <p class="get-started-desc" data-i18n="contact_desc">
-            Deploy Kinemo across your cinema chain today with fast integration, enterprise-grade stability, and immersive 4D synchronization.
-        </p>
+    <div class="container">
 
-        <!-- SUBSCRIPTION CALL TO ACTION BOX -->
         <div class="subscription-banner-card">
-            <h3 class="banner-heading" data-i18n="sub_box_title">Start Your Subscription</h3>
-            <p class="banner-subtext" data-i18n="sub_box_desc">Scale your cinema chain instantly with zero deployment friction and full technical backing.</p>
 
-            <a href="#" class="btn-primary btn-large sub-action-btn" data-i18n="sub_btn_now">Subscribe Now</a>
+            <span class="section-tag" data-i18n="contact_tag">
+                CONTACT
+            </span>
+
+            <h2 class="section-title" data-i18n="contact_title">
+                Ready to transform your cinema experience?
+            </h2>
+
+            <p class="get-started-desc" data-i18n="contact_desc">
+                Talk to our team and discover how Kinemo can bring immersive 4D technology to your cinema with fast integration, reliable performance, and full technical support.
+            </p>
+
+            <a href="#" class="btn-primary btn-large sub-action-btn" data-i18n="sub_btn_now">
+                Get Started
+            </a>
 
             <div class="banner-footer-info">
-                <p class="banner-disclaimer" data-i18n="sub_disclaimer">By subscribing, you accept our <a href="#" data-i18n="sub_terms_link">terms & privacy policy</a>.</p>
-                <a href="#" class="enterprise-link" data-i18n="sub_enterprise_link">Need custom enterprise solutions? Contact sales</a>
+                <p class="banner-disclaimer" data-i18n="sub_disclaimer">
+                    By getting started, you accept our
+                    <a href="terms.html">terms & conditions policy</a>.
+                </p>
+
+                <a href="#" class="enterprise-link" data-i18n="sub_enterprise_link">
+                    Need custom enterprise solutions? Contact sales
+                </a>
             </div>
+
         </div>
+
     </div>
 </section>
 
@@ -294,16 +321,11 @@
 <footer class="footer">
     <div class="container footer-container">
         <div class="footer-left">
-            <a href="#" class="logo">
-                <span class="logo-icon">И</span>
-                <span class="logo-text">Kinemo</span>
-            </a>
-            <span class="copyright">© 2026 Kinemo · All rights reserved</span>
+            <span class="logo-text">Kinemo</span>
+            <span class="copyright" data-i18n="footer_rights">© 2026 Kinemo · All rights reserved</span>
         </div>
-        <div class="footer-links">
-            <a href="#" data-i18n="ft_privacy">Privacy</a>
-            <a href="#" data-i18n="ft_terms">Terms</a>
-            <a href="#contact" data-i18n="ft_contact">Contact</a>
+        <div class="footer-right">
+            <a href="terms.html" class="footer-link" data-i18n="ft_terms">terms and conditions</a>
         </div>
     </div>
 </footer>
